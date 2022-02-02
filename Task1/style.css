@@ -23,9 +23,7 @@ body {
 .calc-grid > button {
   cursor: pointer;
   font-size: 2rem;
-
-  border-radius: 10px;
-  border: none;
+  border: 1px solid #505050;
   outline: none;
   background-color: #343434;
 }
@@ -47,6 +45,7 @@ body {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
+  min-height: 175px;
 }
 
 .screen .above {
