@@ -6,8 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-.center-text {
-  text-align: center;
+.tasks {
+  font-size: 2em;
+  padding: 25px 0;
+  margin-left: 120px;
 }
 
 .todo-container {
@@ -16,30 +18,36 @@
 }
 
 .todo-wrapper {
-  background-color: #6f4e8f;
+  background-color: #e6ffc6;
   padding: 25px;
+  width: 350px;
+  min-height: 600px;
 }
 
-.new-todo {
-  background-color: #d1b4ed;
-  padding: 20px;
-  margin-top: 10px;
-  width: 300px;
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-btn {
+  background-color: #d4fe9f;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  margin: 10px 0;
 }
 
 input {
-  margin-bottom: 25px;
-}
-
-.todo-button {
   outline: none;
   border: none;
-  padding: 10px;
-  cursor: pointer;
-  background-color: #343434;
-  color: white;
 }
 
-.todo-button:hover {
-  background-color: #121212;
+.title {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  height: 75px;
 }
