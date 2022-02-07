@@ -58,6 +58,14 @@ form,
   margin: 10px 0;
 }
 
+.close-btn {
+  background-color: #eb5b5b;
+}
+
+.save-btn {
+  background-color: #a3d16a;
+}
+
 .add-btn:hover,
 .close-btn:hover,
 .save-btn:hover {
