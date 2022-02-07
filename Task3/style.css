@@ -24,12 +24,32 @@
   min-height: 600px;
 }
 
-form {
+form,
+.add-task {
   display: flex;
   flex-direction: column;
 }
 
-.add-btn {
+.add-task,
+.close-btn {
+  display: none;
+}
+
+.show-close-btn {
+  display: block;
+}
+
+.show-add-task {
+  display: inherit;
+}
+
+.hide-add-btn {
+  display: none;
+}
+
+.add-btn,
+.close-btn,
+.save-btn {
   background-color: #d4fe9f;
   border: none;
   outline: none;
@@ -38,7 +58,9 @@ form {
   margin: 10px 0;
 }
 
-.add-btn:hover {
+.add-btn:hover,
+.close-btn:hover,
+.save-btn:hover {
   animation: btn-animation 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
