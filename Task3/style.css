@@ -20,7 +20,7 @@
 .todo-wrapper {
   background-color: #e6ffc6;
   padding: 25px;
-  width: 350px;
+  width: 400px;
   min-height: 600px;
 }
 
@@ -104,8 +104,7 @@ textarea {
 .task {
   background-color: white;
   padding: 10px;
-  margin-top: -10px;
-  margin-bottom: 30px;
+  margin: 10px 0 20px 0;
   box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.3);
   position: relative;
 }
@@ -119,9 +118,21 @@ textarea {
   align-items: center;
   position: absolute;
   right: 10px;
-  top: 2px;
+  top: 5px;
 }
+
 .icon:hover {
   cursor: pointer;
   fill: #eb5b5b;
+}
+.icon {
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: white;
+  pointer-events: stroke;
+}
+
+.remove-check {
+  display: none;
 }
