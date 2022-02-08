@@ -50,12 +50,13 @@ form,
 .add-btn,
 .close-btn,
 .save-btn {
-  background-color: #d4fe9f;
+  background-color: #b5eb73;
   border: none;
   outline: none;
   cursor: pointer;
   height: 40px;
   margin: 10px 0;
+  border-radius: 6px;
 }
 
 .close-btn {
@@ -103,9 +104,24 @@ textarea {
 .task {
   background-color: white;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: -10px;
+  margin-bottom: 30px;
   box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 .title {
   font-weight: bolder;
+  margin-bottom: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+.icon:hover {
+  cursor: pointer;
+  fill: #eb5b5b;
 }

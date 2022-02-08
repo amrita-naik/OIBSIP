@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do App</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
   <p class="tasks">Tasks</p>
@@ -22,9 +23,13 @@
           <br />
         </form>
         <div class="task-list">
-          <div class="task">
+          <div class="task incomplete-task">
+            <div class="icons">
+              <svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: #a3d16a;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+              <svg class="icon delete-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="fill: #eb5b5b;"><path d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm10.618-3L15 2H9L7.382 4H3v2h18V4z"></path></svg>
+            </div>
             <p class="title">Title</p>
-            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto reprehenderit expedita, ea, magnam voluptates iste aperiam maxime blanditiis eum iure enim optio et autem velit!</p>
+            <p class="desc">Lorem ipsum dolor sit amet okkkkk, consectetur adipis</p>
           </div>
         </div>
         
@@ -42,14 +47,9 @@
 
     <div class="todo-wrapper">
       <h2>Completed</h2>
-      <div class="task">
-        <p class="title">Title</p>
-        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto reprehenderit expedita, ea, magnam voluptates iste aperiam maxime blanditiis eum iure enim optio et autem velit!</p>
-      </div>
     </div>
 
   </div>
-
   <script defer src="./main.js"></script>
 
 </body>
