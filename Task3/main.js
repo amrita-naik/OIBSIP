@@ -67,13 +67,26 @@ window.addEventListener('load', () => {
         function checkedTask() {
             taskDiv.remove()
             completedList.appendChild(taskDiv)
+            taskDiv.classList.add('checked-task')
             newIcons.removeChild(newCheck)
         }
 
         newDelete.addEventListener('click', deleteTask)
 
         function deleteTask() {
+            taskDiv.classList.add('fall')
+            taskDiv.addEventListener('animationend', function() {
+                taskDiv.remove()
+            })
+        }
+
+        completedList.addEventListener('click', uncheckTask)
+
+        function uncheckTask() {
             taskDiv.remove()
+            taskList.appendChild(taskDiv)
+            taskDiv.classList.remove('checked-task')
+            newIcons.appendChild(newCheck)
         }
     })
 })
