@@ -7,12 +7,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0 none;
+  border: none;
   position: relative;
 }
 html {
-  background: #000;
-  font-size: 1rem;
   color: #000;
   font-family: "KoHo", sans-serif;
 }
@@ -35,14 +33,14 @@ h2 {
   margin: 15% 0 auto;
   font-size: 5em;
   line-height: 1;
-  word-spacing: 0.5rem;
+  word-spacing: 0.7rem;
 }
 
 h3 {
   margin: 15% 0 auto;
   font-size: 3em;
   line-height: 1;
-  word-spacing: 0.5rem;
+  word-spacing: 0.7rem;
 }
 
 p {
@@ -64,27 +62,25 @@ p {
 }
 
 figure {
-  background: #eee;
   width: calc(50% + 1px);
   height: 100vh;
-  margin: 0 auto 10vh 0;
+  margin: 0 auto 10% 0;
   position: sticky;
   top: 0;
   overflow: hidden;
-  box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.3);
   border: 15px solid black;
 }
 figure::after {
   content: "";
   position: absolute;
-  top: 5vmin;
-  right: 5vmin;
-  bottom: 5vmin;
-  left: 45%;
-  pointer-events: none;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 40%;
 }
 figure:nth-of-type(2n)::after {
-  right: 45%;
+  right: 40%;
   left: 5vmin;
 }
 section {
@@ -95,7 +91,7 @@ section {
   position: sticky;
   top: 0;
   padding: 5vmin;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.3);
 }
 figure:nth-of-type(1),
 section:nth-of-type(1) {
@@ -104,11 +100,11 @@ section:nth-of-type(1) {
 }
 figure:nth-of-type(2n) {
   margin: 0 0 10vh auto;
-  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.3);
 }
 section:nth-of-type(2n) {
   margin: 0 auto 10vh 0;
-  box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.3);
 }
 figure:last-of-type,
 section:last-of-type {
@@ -121,13 +117,12 @@ section:nth-of-type(2n)::before {
 section::after {
   content: "";
   position: absolute;
-  top: 5vmin;
-  right: 45%;
-  bottom: 5vmin;
-  left: 5vmin;
-  pointer-events: none;
+  top: 10px;
+  right: 40%;
+  bottom: 10px;
+  left: 10px;
 }
 section:nth-of-type(2n):after {
-  right: 5vmin;
-  left: 45%;
+  right: 10px;
+  left: 40%;
 }
